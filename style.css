@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer{
+    height: 50px;
+    margin: 0 -10px;
+}
+h1{
+    font-size: 32px;
+}
+h2{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+a{
+    text-decoration: none;
+    color: #0865ce;
+}
+a:hover{
+    text-decoration:underline;
+}
+footer a{
+    color: rgba(0, 0, 0, 0.5);
+    margin: 0 10px;
+    font-size: 14px;
+}
+.wrapper{
+    min-height: 100vh;
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.content{
+    min-height: calc(100vh - 50px);
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.content_sub{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+}
+.logo{
+    margin-right: 10px;
+}
+.logo span{
+    color: #ff2c2b;
+}
+.text_block{
+    margin-bottom: 30px;
+}
+.wrapper_search{
+    background-color: #ffc93d;
+    border: 2px solid #ffc93d;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+input[type='search']{
+    width: calc(100% - 20px);
+    height: 40px;
+    padding: 0 10px;
+    outline: none;
+    border: none;
+    background-color: #fff;
+    border-radius: 8px;
+    font-size: 16px;
+}
+input[type='submit']{
+    width: 80px;
+    border: none;
+    background-color: #ffc93d;
+    font-size: 16px;
+    cursor: pointer;
+}
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: -5px 0;
+}
+li{
+    width: 50%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 5px 0;
+}
+li img{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+@media (max-width: 700px) {
+    li{
+        width: 100%;
+    }
+    .content_sub{
+        flex-wrap: wrap;
+    }
+    .logo{
+        width: 100%;
+        margin: 0 0 30px 0;
+        font-size: 40px;
+        text-align: center;
+    }
+}
